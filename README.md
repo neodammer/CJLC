@@ -8,15 +8,16 @@ This is a complete static website for CJL Consulting and The Green Group. It use
 - About, company structure and six Green Group divisions
 - Filterable five-year project pipeline
 - Investment-opportunity section with a due-diligence disclaimer
-- Management-team profiles with temporary initials in place of approved photographs
+- Management-team profiles with the supplied photographs
 - Netlify-ready contact form and thank-you page
 - Original Mauritius renewable-energy hero image
 - Original CJL Consulting logo extracted from the supplied company-structure document
+- Supplied management photographs
 
 ## Check before publishing
 
 1. Confirm all company, project, capex and investment information.
-2. Replace the four initials-based team visuals when approved headshots are available.
+2. Replace the supplied management photographs if higher-resolution approved headshots become available.
 3. Confirm the email addresses, telephone numbers and WhatsApp number.
 4. Have legal and financial advisers approve the investment wording.
 5. Submit a test enquiry after the first Netlify deployment.

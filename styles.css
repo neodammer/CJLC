@@ -225,7 +225,8 @@ em { color: var(--forest-600); font-family: var(--serif); font-weight: 400; }
 .group em { color: var(--lime); }
 .group-heading { display: grid; grid-template-columns: 1fr 0.8fr; align-items: end; gap: 100px; margin-bottom: 72px; }
 .group-heading h2 { margin-bottom: 0; font-size: clamp(3.2rem, 6vw, 6rem); }
-.group-heading > p { max-width: 490px; margin-bottom: 8px; color: rgba(255,255,255,0.66); }
+.group-summary { display: flex; flex-direction: column; align-items: flex-start; }
+.group-summary > p { max-width: 490px; margin-bottom: 0; color: rgba(255,255,255,0.66); }
 .division-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid rgba(255,255,255,0.16); border-left: 1px solid rgba(255,255,255,0.16); }
 .division-card { min-height: 360px; display: flex; flex-direction: column; padding: 30px; border-right: 1px solid rgba(255,255,255,0.16); border-bottom: 1px solid rgba(255,255,255,0.16); transition: background 180ms ease; }
 .division-card:hover { background: rgba(255,255,255,0.055); }
@@ -285,6 +286,7 @@ em { color: var(--forest-600); font-family: var(--serif); font-weight: 400; }
 .person-avatar { position: relative; grid-row: 1 / 3; width: 74px; height: 100px; display: grid; place-items: center; overflow: hidden; background: linear-gradient(160deg, #4f775e, #173b2d); color: var(--white); }
 .person-avatar::before { content: ""; position: absolute; width: 80px; height: 80px; border: 1px solid rgba(255,255,255,0.28); border-radius: 50%; transform: translate(25px, -28px); }
 .person-avatar span { position: relative; font-family: var(--serif); font-size: 1.25rem; }
+.person-photo { display: block; background: var(--forest-900); }
 .avatar-two { background: linear-gradient(160deg, #7e8d79, #244837); }
 .avatar-three { background: linear-gradient(160deg, #4d6d62, #0d2a20); }
 .avatar-four { background: linear-gradient(160deg, #6d7d5c, #274533); }
@@ -380,14 +382,17 @@ em { color: var(--forest-600); font-family: var(--serif); font-weight: 400; }
 @media (max-width: 840px) {
   :root { --container: min(100% - 34px, 760px); }
   .section { padding: 94px 0; }
+  .site-header { backdrop-filter: none; }
   .header-inner { grid-template-columns: 1fr auto; }
+  .brand { position: relative; z-index: 102; }
   .header-cta { display: none; }
   .menu-toggle { display: block; z-index: 102; }
   .menu-toggle[aria-expanded="true"] > span:nth-of-type(2) { transform: translateY(3px) rotate(45deg); }
   .menu-toggle[aria-expanded="true"] > span:nth-of-type(3) { transform: translateY(-3px) rotate(-45deg); }
-  .primary-nav { position: fixed; inset: 0; z-index: 101; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 22px; padding: 90px 34px 50px; background: var(--cream); transform: translateX(100%); transition: transform 260ms ease; }
+  .primary-nav { position: fixed; inset: 0; z-index: 101; width: 100%; min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 0; padding: 104px 34px 44px; overflow-y: auto; overscroll-behavior: contain; background: var(--cream); transform: translateX(100%); transition: transform 260ms ease; }
   .primary-nav.open { transform: translateX(0); }
-  .primary-nav a { font-size: clamp(1.8rem, 8vw, 3rem); letter-spacing: -0.05em; }
+  .primary-nav a { width: 100%; padding: 16px 0; border-bottom: 1px solid var(--line); font-size: clamp(1.65rem, 8vw, 2.65rem); line-height: 1.05; letter-spacing: -0.05em; }
+  .primary-nav a::after { display: none; }
   .hero, .hero-inner { min-height: 850px; }
   .hero-inner { display: flex; flex-direction: column; align-items: stretch; justify-content: flex-end; gap: 46px; padding-bottom: 62px; }
   .hero-copy { max-width: 700px; }
@@ -399,7 +404,7 @@ em { color: var(--forest-600); font-family: var(--serif); font-weight: 400; }
   .about-visual { min-height: 500px; }
   .structure-block { margin-top: 90px; padding-top: 60px; }
   .group-heading, .project-heading, .team-heading { grid-template-columns: 1fr; gap: 28px; }
-  .group-heading > p, .project-heading > p, .team-heading > p { max-width: 640px; }
+  .group-summary > p, .project-heading > p, .team-heading > p { max-width: 640px; }
   .division-grid { grid-template-columns: repeat(2, 1fr); }
   .project-row { grid-template-columns: 44px 1fr auto; gap: 10px 16px; padding: 20px 0; }
   .project-location { grid-column: 2; }
