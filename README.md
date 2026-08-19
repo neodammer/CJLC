@@ -1,10 +1,12 @@
 # CJL Consulting website
 
-This is a complete static website for CJL Consulting and The Green Group. It uses plain HTML, CSS and JavaScript, so no installation or build step is required.
+This is a complete static website for CJL Consulting and The Green Group, presented in the Green Infrastructure & Investment design. It uses plain HTML, CSS and JavaScript, so no installation or build step is required.
 
 ## What is included
 
 - Responsive one-page company website
+- Exact seven-item navigation covering Home, About Us, The Green Group, Projects, Investment Opportunities, Management Team and Contact
+- Investment-led portfolio overview and project-pipeline metrics
 - About, company structure and six Green Group divisions
 - Filterable five-year project pipeline
 - Investment-opportunity section with a due-diligence disclaimer
