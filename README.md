@@ -1,16 +1,20 @@
 # CJL Consulting website
 
-This is a complete static website for CJL Consulting and The Green Group, presented in the Green Infrastructure & Investment design. It uses plain HTML, CSS and JavaScript, so no installation or build step is required.
+This is a complete multi-page static website for CJL Consulting and The Green Group, presented in the Green Infrastructure & Investment design. It uses plain HTML, CSS and JavaScript, so no installation or build step is required.
 
 ## What is included
 
-- Responsive one-page company website
+- Responsive multi-page company website
 - Exact seven-item navigation covering Home, About Us, The Green Group, Projects, Investment Opportunities, Management Team and Contact
+- Dedicated About, Green Group, Projects, Investment, Management, Company Structure, News and Contact pages
+- Dedicated dynamic detail pages for all six divisions, eight listed projects and four management profiles
 - Investment-led portfolio overview and project-pipeline metrics
 - About, company structure and six Green Group divisions
 - Filterable five-year project pipeline
 - Investment-opportunity section with a due-diligence disclaimer
 - Management-team profiles with the supplied photographs
+- Authentic Green Group division marks extracted from the supplied PowerPoint presentations
+- A fixed back-to-top control that appears after scrolling
 - Netlify-ready contact form and thank-you page
 - Original Mauritius renewable-energy hero image
 - Original CJL Consulting logo extracted from the supplied company-structure document
@@ -79,9 +83,20 @@ Open the Netlify project, choose **Domain management**, then **Add a domain**. E
 
 ## Files
 
-- `index.html` — website content and structure
+- `index.html` — main company homepage
+- `about.html` — company background, mandate and future vision
+- `green-group.html` — overview and directory of the six specialist divisions
+- `division.html` — reusable dedicated page for each Green Group division
+- `projects.html` — filterable project portfolio
+- `project.html` — reusable dedicated page for each listed project
+- `investment-opportunities.html` — investor qualification, review process and disclaimer
+- `management-team.html` — management-team directory
+- `profile.html` — reusable full management profile page
+- `company-structure.html` — company and division structure map
+- `news.html` — approved-news and insights page ready for future content
+- `contact.html` — Netlify-ready enquiry form and direct contact details
 - `styles.css` — visual design and responsive layout
-- `script.js` — navigation, filters, animation and division details
+- `script.js` — navigation, filters, animation and dynamic detail-page content
 - `thank-you.html` — confirmation page shown after form submission
 - `assets/` — website image assets
 - `netlify.toml` — Netlify publishing and security settings
